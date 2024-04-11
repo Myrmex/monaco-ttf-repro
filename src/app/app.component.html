@@ -1,0 +1,11 @@
+<div>
+  <h1>repro</h1>
+  <div id="editor">
+    <ngx-monaco-editor
+      [options]="editorOptions"
+      formControlName="text"
+      (onInit)="onEditorInit($event)"
+      style="height: 100%"
+    />
+  </div>
+</div>

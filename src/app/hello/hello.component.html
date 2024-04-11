@@ -1,0 +1,14 @@
+<div>
+  <form [formGroup]="form" (submit)="save()">
+    <mat-form-field>
+      <input
+        type="text"
+        matInput
+        [formControl]="inputName"
+        placeholder="name"
+      />
+    </mat-form-field>
+    <p>Hello, {{ inputName.value }}!</p>
+    <button mat-flat-button type="submit">OK</button>
+  </form>
+</div>
